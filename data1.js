@@ -1,4 +1,4 @@
-{
+var dataset = [{
     "gaugeData" :[
        {
           "name":"Quality Score",
@@ -195,4 +195,4 @@
           }
        ]
     }
- }
+ }]

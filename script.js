@@ -1,15 +1,14 @@
 console.log("hello");
 
-console.log(data.toString());
 
-var dataset = JSON.parse(
-    
-)
-console.log(dataset);
+console.log(dataset[0].gaugeData[0]);
 
-d3.json("users.json", function(data) {
-    console.log(data);
-});
+fetch('https://github.com/Angel350/ONR-Assessment/blob/main/data1.json')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+
+
 var pie=d3.layout.pie()
         .value(function(d){return d.percent})
         .sort(null)

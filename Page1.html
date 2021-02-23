@@ -15,14 +15,28 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <script src="data1.json"></script>
-  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <script src="d3/d3.js"></script>
+  <script src="data1.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js" charset="utf-8"></script>
+  <!-- <script src="d3/d3.js"></script> -->
   <script src="script.js"></script>
 
 </head>
 
 <body>
+
+  <script>
+    d3.json("data1.json", function(error, data) {
+      d3.select("card")
+      .selectAll(".widget")
+      .data(data)
+      .enter()
+      .append("p")
+      .text(function(d) { return d.name + ", " + d.location; });
+
+
+    console.log(data);
+  })
+  </script>
 
   <div class="container-fluid main">
     <div id="NavBar-Vertical">
