@@ -161,7 +161,7 @@ color: #888888;
 }
 
 .card{
-  border: 1px blue solid;
+  border: 1px rgba(136, 136, 136, 0.637) solid;
   border-radius: 4px;
   height: 25%;
   margin-bottom: 10px;
@@ -217,6 +217,13 @@ path.color1 {
 }
 text {
   font-size: 7em;
+  font-weight: 400;
+  line-height: 16em;
+  fill: var(--darkerblue);
+}
+
+#area-chart text {
+  font-size: inherit;
   font-weight: 400;
   line-height: 16em;
   fill: var(--darkerblue);
